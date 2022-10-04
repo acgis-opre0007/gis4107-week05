@@ -12,3 +12,4 @@ def mod_myvar(var):
             var *= 2        #condition 3
         else:
             var -= 2        #condition 4
+    return var
