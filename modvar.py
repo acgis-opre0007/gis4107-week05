@@ -1,0 +1,14 @@
+import math
+
+def mod_myvar(var):
+    
+    if var % 2:
+        if var ** 3 != 27:
+            var += 4        #condition 1
+        else:
+            var /=1.5       #condition 2
+    else:
+        if var <= 10:
+            var *= 2        #condition 3
+        else:
+            var -= 2        #condition 4
