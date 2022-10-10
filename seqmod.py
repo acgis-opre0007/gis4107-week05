@@ -3,13 +3,13 @@ def mod_sequence(seq,skip_index=None,truncate_index=None):
     Given a string, returns a version that has been truncated and had some character omitted.
     seq -- initial string
     skip_index -- the position of the character to be omitted
-    truncate_index -- the position before which to truncate the string; ignored when equal to or greater
+    truncate_index -- the position at which to truncate the string; ignored when equal to or greater
         than initial string length
     """
 
     result = ''
     if truncate_index == None or truncate_index >= len(seq):
-        start_value = 0
+        end_value = len(seq)
     else:
         end_value = truncate_index
 
@@ -21,4 +21,4 @@ def mod_sequence(seq,skip_index=None,truncate_index=None):
     
     return result
 
-print(mod_sequence("ABCD",1,2))
+#print(mod_sequence("ABCD"))
