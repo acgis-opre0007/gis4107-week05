@@ -7,14 +7,13 @@ def mod_sequence(seq,skip_index=None,truncate_index=None):
         than initial string length
     """
 
-    seq_length = len(seq)
     result = ''
-    if truncate_index == None or truncate_index >= (seq_length):
+    if truncate_index == None or truncate_index >= len(seq):
         start_value = 0
     else:
-        start_value = truncate_index
+        end_value = truncate_index
 
-    for x in range(start_value,seq_length):
+    for x in range(end_value):
         if x == skip_index:
             continue
         else:
@@ -22,4 +21,4 @@ def mod_sequence(seq,skip_index=None,truncate_index=None):
     
     return result
 
-print(mod_sequence("ABCD",None,3))
+print(mod_sequence("ABCD",1,2))
