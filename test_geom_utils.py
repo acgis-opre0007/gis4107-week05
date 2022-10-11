@@ -72,8 +72,8 @@ test_is_point_in_box_left_outside()
 test_is_point_in_box_left_edge()
 test_is_point_in_box_above_outside()
 test_is_point_in_box_top_edge()
-test_is_point_in_box_right_outside
-test_is_point_in_box_right_edge
+test_is_point_in_box_right_outside()
+test_is_point_in_box_right_edge()
 test_is_point_in_box_below_outside()
 test_is_point_in_box_bottom_edge()
 test_is_point_in_box_inside()
