@@ -1,19 +1,34 @@
 import fc_manager as FC
 
-test_get_feature_type<POINT>:
+def test_get_feature_type_1():
     feature_code = 1
-    expected: 'POINT'
-    actual: FC.get_feature_type(1)
-    
+    expected = 'POINT'
+    actual = FC.get_feature_type(feature_code)
+    print (actual)
+    assert actual == expected 
 
-test_get_feature_type<POLYLINE>:
-    expected: 'POLYLINE'
-    actual: FC.get_feature_type(2)
+def test_get_feature_type_2():
+    feature_code = 2
+    expected = 'POLYLINE'
+    actual = FC.get_feature_type(feature_code)
+    print (actual)
+    assert actual == expected 
 
-test_get_feature_type<POLYGON>:
-    expected: 'POLYGON'
-    actual: FC.get_feature_type(3)
+def test_get_feature_type_3():
+    feature_code = 3
+    expected = 'POLYGON'
+    actual = FC.get_feature_type(feature_code)
+    print (actual)
+    assert actual == expected  
 
-test_get_feature_type<NONE>
-    expected: 'none'
-    actual: FC.get_feature_type(4)
+def test_get_feature_type_0():
+    feature_code = 0
+    expected = 'None'
+    actual = FC.get_feature_type(feature_code)
+    print (actual)
+    assert actual == expected  
+
+test_get_feature_type_1()
+test_get_feature_type_2()
+test_get_feature_type_3()
+test_get_feature_type_0()
